@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legion Fitness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Ваша шапка (без изменений в логике, приведена к валидной HTML-структуре) -->
+        <header class="header">
+            <div class="h-logo">
+                <!-- Замените logo.png на путь к вашему логотипу -->
+                <img src="assets/logo.jpg" alt="Legion Logo" class="img-logo">
+                <div class="logo-text">
+                    <span class="h-text">Фитнес зал Legion</span>
+                    <span>График работы 10:00-23:30</span>
+                </div>
+            </div>
+            <nav class="h-links">
+                <a href="#">Тренеры</a>
+                <a href="#">Питание</a>
+                <a href="#">Абонимент</a>
+                <a href="#">Экипировка</a>
+            </nav>
+            <a href="#" class="h-btn">Записаться в зал</a>
+        </header>
+
+        <!-- 🔥 Hero-блок -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">LEGION</h1>
+                    <p class="hero-slogan">Дисциплина. Сила. Честь.</p>
+                    <p class="hero-desc">
+                        Пространство, где закаляется характер. Мы помогаем развивать силу, выносливость и уверенность, превращая каждую тренировку в шаг к вашему лучшему результату.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Записаться</a>
+                        <a href="#" class="btn btn-secondary">Посмотреть тарифы</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <!-- Замените ссылку ниже на ваше изображение -->
+                    <img src="assets/hero-bg.jpg" alt="Атлет Legion" class="hero-image">
+                    <div class="hero-overlay"></div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- === PROGRAMS SECTION === -->
+<section class="programs">
+  <div class="programs-header">
+    <h2 class="programs-title">Узнай на что ты способен</h2>
+    <p class="programs-subtitle">Программы тренировок еоторые рекомендуют наши тренера</p>
+  </div>
+  <div class="programs-grid" id="programs-grid">
+    <!-- Карточки будут добавлены динамически через main.js -->
+  </div>
+  <!-- === Тарифы / Абонементы === -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="pricing-header">
+      <h2 class="pricing-title">Абонементы</h2>
+      <p class="pricing-subtitle">Выбери свой уровень и начни трансформацию уже сегодня</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Базовый -->
+      <div class="pricing-card">
+        <div class="pricing-card-content">
+          <h3 class="pricing-card-name">Базовый</h3>
+          <div class="pricing-price">3 500 ₽<span>/мес</span></div>
+          <p class="pricing-desc">Идеально для самостоятельных тренировок в удобное время</p>
+          <ul class="pricing-features">
+            <li>Доступ в зал с 10:00 до 16:00</li>
+            <li>Базовое оборудование и тренажёры</li>
+            <li>Раздевалка и душевые</li>
+            <li>Вводный инструктаж</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">Начать</a>
+        </div>
+      </div>
+
+      <!-- Стандарт (Популярный) -->
+      <div class="pricing-card pricing-card--popular">
+        <div class="pricing-badge">Самый популярный</div>
+        <div class="pricing-card-content">
+          <h3 class="pricing-card-name">Стандарт</h3>
+          <div class="pricing-price">5 900 ₽<span>/мес</span></div>
+          <p class="pricing-desc">Полный доступ, программа от тренера и контроль прогресса</p>
+          <ul class="pricing-features">
+            <li>Безлимитный доступ 10:00–23:30</li>
+            <li>Все зоны, кардио и free-weight</li>
+            <li>Персональная программа тренировок</li>
+            <li>План питания под цели</li>
+            <li>Ежемесячные замеры и корректировки</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Приобрести</a>
+        </div>
+      </div>
+
+      <!-- Premium -->
+      <div class="pricing-card">
+        <div class="pricing-card-content">
+          <h3 class="pricing-card-name">Premium</h3>
+          <div class="pricing-price">9 500 ₽<span>/мес</span></div>
+          <p class="pricing-desc">Максимальный результат с VIP-сопровождением и приоритетом</p>
+          <ul class="pricing-features">
+            <li>Безлимитный доступ 24/7</li>
+            <li>Персональный тренер (4 зан./мес)</li>
+            <li>Индивидуальный план питания + БАД</li>
+            <li>Доступ к закрытым мастер-классам</li>
+            <li>Еженедельные корректировки</li>
+            <li>Приоритетная поддержка и бронирование</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">Приобрести</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- === TRAINERS SECTION START === -->
+<section class="trainers-section" id="trainers">
+  <div class="trainers-container">
+    <div class="trainers-header">
+      <h2 class="trainers-title">Наши тренеры</h2>
+      <p class="trainers-subtitle">Профессионалы, которые помогут достичь ваших целей</p>
+    </div>
+    
+    <div class="trainers-grid">
+      <!-- Карточка тренера 1 -->
+      <div class="trainer-card" data-trainer-id="alex">
+        <div class="trainer-photo-wrapper">
+          <img 
+            src="./assets/Islam.jpg" 
+            alt="Александр Петров" 
+            class="trainer-photo"
+            data-trainer-photo="alex"
+          >
+        </div>
+        <div class="trainer-info">
+          <h3 class="trainer-name">Магомадов Ислам</h3>
+          <p class="trainer-specialization">Силовой тренинг • Кроссфит</p>
+          <div class="trainer-stats">
+            <span class="trainer-stat"><strong>Возраст:</strong> 25 года</span>
+            <span class="trainer-stat"><strong>Стаж:</strong> 8 лет</span>
+          </div>
+          <button 
+            class="trainer-contact-btn" 
+            data-trainer-name="Магомадов Ислам"
+            data-trainer-phone="+79659615423"
+            data-trainer-social="https://t.me/alex_fitness"
+          >
+            Связаться
+          </button>
+        </div>
+      </div>
+
+      <!-- Карточка тренера 2 -->
+      <div class="trainer-card" data-trainer-id="maria">
+        <div class="trainer-photo-wrapper">
+          <img 
+            src="./assets/musa.jpg" 
+            alt="Мария Соколова" 
+            class="trainer-photo"
+            data-trainer-photo="maria"
+          >
+        </div>
+        <div class="trainer-info">
+          <h3 class="trainer-name">Муса Алиев</h3>
+          <p class="trainer-specialization">Массанабор • Жим • Восстановление</p>
+          <div class="trainer-stats">
+            <span class="trainer-stat"><strong>Возраст:</strong> 19 лет</span>
+            <span class="trainer-stat"><strong>Стаж:</strong> 2 лет</span>
+          </div>
+          <button 
+            class="trainer-contact-btn" 
+            data-trainer-name="Муса Алиев"
+            data-trainer-phone="+79997654321"
+            data-trainer-social="https://instagram.com/maria_fit"
+          >
+            Связаться
+          </button>
+        </div>
+      </div>
+
+      <!-- Карточка тренера 3 -->
+      <div class="trainer-card" data-trainer-id="dmitry">
+        <div class="trainer-photo-wrapper">
+          <img 
+            src="./assets/yunadi.jpg" 
+            alt="Юнади Исламович" 
+            class="trainer-photo"
+            data-trainer-photo="dmitry"
+          >
+        </div>
+        <div class="trainer-info">
+          <h3 class="trainer-name">Юнади Сукиев</h3>
+          <p class="trainer-specialization">Бодибилдинг • Питание • Мотивация</p>
+          <div class="trainer-stats">
+            <span class="trainer-stat"><strong>Возраст:</strong> 35 лет</span>
+            <span class="trainer-stat"><strong>Стаж:</strong> 12 лет</span>
+          </div>
+          <button 
+            class="trainer-contact-btn" 
+            data-trainer-name="Юнади Сукиев"
+            data-trainer-phone="+79995551234"
+            data-trainer-social="https://wa.me/79995551234"
+          >
+            Связаться
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно (одно для всех тренеров) -->
+  <div class="trainer-modal" id="trainerModal" aria-hidden="true">
+    <div class="trainer-modal-overlay"></div>
+    <div class="trainer-modal-content">
+      <button class="trainer-modal-close" aria-label="Закрыть">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h3 class="trainer-modal-name" id="modalTrainerName"></h3>
+      <p class="trainer-modal-label">Свяжитесь с тренером:</p>
+      <div class="trainer-modal-actions">
+        <a href="#" class="trainer-modal-btn trainer-modal-phone" id="modalPhoneBtn" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Позвонить
+        </a>
+        <a href="#" class="trainer-modal-btn trainer-modal-social" id="modalSocialBtn" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          Написать
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- === TRAINERS SECTION END === -->
+</section>
+</section>
+<!-- === END PROGRAMS SECTION === -->
+    </div>
+    <!-- === GYM FOOTER START === -->
+<footer class="gym-footer">
+  <div class="gym-footer-container">
+    <div class="gym-footer-grid">
+      
+      <!-- Левая часть: Бренд -->
+      <div class="gym-footer-column gym-footer-brand">
+        <div class="gym-footer-logo">LEGION</div>
+        <p class="gym-footer-slogan">Дисциплина. Сила. Честь.</p>
+        <p class="gym-footer-desc">Премиальное пространство для тех, кто стремится к максимальному результату. Современные зоны, профессиональное оборудование и авторские методики тренировок.</p>
+      </div>
+
+      <!-- Навигация -->
+      <div class="gym-footer-column gym-footer-nav">
+        <h4 class="gym-footer-heading">Навигация</h4>
+        <ul class="gym-footer-links">
+          <li><a href="/" class="gym-footer-link">Главная</a></li>
+          <li><a href="#programs" class="gym-footer-link">Тренировки</a></li>
+          <li><a href="#trainers" class="gym-footer-link">Тренеры</a></li>
+          <li><a href="#pricing" class="gym-footer-link">Абонементы</a></li>
+          <li><a href="#contacts" class="gym-footer-link">Контакты</a></li>
+        </ul>
+      </div>
+
+      <!-- Контакты -->
+      <div class="gym-footer-column gym-footer-contacts">
+        <h4 class="gym-footer-heading">Контакты</h4>
+        <div class="gym-footer-contact-item">
+          <span class="gym-footer-icon">📞</span>
+          <a href="tel:+79991234567" class="gym-footer-contact-link">+7 (999) 123-45-67</a>
+        </div>
+        <div class="gym-footer-contact-item">
+          <span class="gym-footer-icon">✉️</span>
+          <a href="mailto:info@legionfitness.ru" class="gym-footer-contact-link">info@legionfitness.ru</a>
+        </div>
+        <div class="gym-footer-contact-item">
+          <span class="gym-footer-icon">📍</span>
+          <span class="gym-footer-text">г. Москва, ул. Спортивная, 12</span>
+        </div>
+        <div class="gym-footer-contact-item">
+          <span class="gym-footer-icon">🕒</span>
+          <span class="gym-footer-text">Ежедневно: 10:00 – 23:30</span>
+        </div>
+      </div>
+
+      <!-- Соцсети и Сертификаты -->
+      <div class="gym-footer-column gym-footer-extras">
+        <h4 class="gym-footer-heading">Соцсети</h4>
+        <div class="gym-footer-socials">
+          <!-- Ссылки легко редактируются -->
+          <a href="https://instagram.com" target="_blank" class="gym-footer-social-btn" title="Instagram">IG</a>
+          <a href="https://t.me/legion" target="_blank" class="gym-footer-social-btn" title="Telegram">TG</a>
+          <a href="https://wa.me/79991234567" target="_blank" class="gym-footer-social-btn" title="WhatsApp">WA</a>
+          <a href="https://youtube.com" target="_blank" class="gym-footer-social-btn" title="YouTube">YT</a>
+        </div>
+
+        <h4 class="gym-footer-heading gym-footer-cert-heading">Сертификаты</h4>
+        <div class="gym-footer-certificates">
+          <div class="gym-footer-cert-item">
+            <img src="./assets/certificate1.jpg" alt="Сертификат качества" class="gym-footer-cert-img">
+          </div>
+          <div class="gym-footer-cert-item">
+            <img src="./assets/certificate1.jpg" alt="Лицензия клуба" class="gym-footer-cert-img">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="gym-footer-divider"></div>
+
+    <!-- Нижняя полоса -->
+    <div class="gym-footer-bottom">
+      <div class="gym-footer-bottom-left">
+        <span class="gym-footer-copyright">© <span id="gym-footer-year">2026</span> Legion Fitness. Все права защищены.</span>
+      </div>
+      <div class="gym-footer-bottom-center">
+        <a href="#" class="gym-footer-bottom-link">Политика конфиденциальности</a>
+        <span class="gym-footer-separator">|</span>
+        <a href="#" class="gym-footer-bottom-link">Пользовательское соглашение</a>
+      </div>
+    </div>
+
+    <!-- Блок отказа от ответственности -->
+    <div class="gym-footer-disclaimer">
+      <p class="gym-footer-disclaimer-text">
+        ⚠️ Отказ от ответственности: Все тренировки выполняются под личную ответственность посетителя. 
+        Клуб не несёт ответственности за травмы или ухудшение состояния здоровья, полученные при нарушении техники безопасности, 
+        игнорировании противопоказаний или самостоятельном изменении нагрузок. Перед началом занятий настоятельно рекомендуется консультация с врачом-специалистом.
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- === GYM FOOTER END === -->
+    <script src="main.js"></script>
+</body>
+</html>
+ 
